@@ -12,12 +12,16 @@
     "express": "~4.11.x",
     "kerberos": "~0.0.x",
     "parse": "~1.8.0",
-    "parse-server": "~2.2.12"
+    "parse-server": "~2.2.12",
+    "snyk": "^1.316.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=4.3"
-  }
+  },
+  "snyk": true
 }
