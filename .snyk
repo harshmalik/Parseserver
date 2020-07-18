@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.16.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - parse-server > parse-server-push-adapter > node-gcm > request > hawk > hoek:
+        patched: '2020-07-18T21:28:38.172Z'
+    - parse-server > parse-server-push-adapter > node-gcm > request > hawk > boom > hoek:
+        patched: '2020-07-18T21:28:38.172Z'
+    - parse-server > parse-server-push-adapter > node-gcm > request > hawk > sntp > hoek:
+        patched: '2020-07-18T21:28:38.172Z'
+    - parse-server > parse-server-push-adapter > node-gcm > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-07-18T21:28:38.172Z'
+  SNYK-JS-LODASH-567746:
+    - parse-server > lodash:
+        patched: '2020-07-18T21:28:38.172Z'
+  'npm:lodash:20180130':
+    - parse-server > parse-server-push-adapter > node-gcm > lodash:
+        patched: '2020-07-18T21:28:38.172Z'
